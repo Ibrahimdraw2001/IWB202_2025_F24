@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تطبيقات الذكاء الاصطناعي - إضافة تطبيق</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="apps.html">التطبيقات</a></li>
+            <li><a href="add_app.html">إضافة تطبيق</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h1>إدخال معلومات تطبيق جديد</h1>
+        
+        <form id="addAppForm">
+            
+            <label for="appName">اسم التطبيق (أحرف إنكليزية فقط، بدون فراغات):</label>
+            <input type="text" id="appName" name="appName" required>
+            <!-- ستظهر رسائل الخطأ أسفل هذا الحقل -->
+            
+            <label for="companyName">الشركة المصنعة (أحرف إنكليزية وأرقام فقط):</label>
+            <input type="text" id="companyName" name="companyName" required>
+            <!-- ستظهر رسائل الخطأ أسفل هذا الحقل -->
+
+            <label for="appUrl">الموقع الإلكتروني (URL):</label>
+            <input type="url" id="appUrl" name="appUrl" required>
+            <!-- ستظهر رسائل الخطأ أسفل هذا الحقل -->
+            
+            <label for="appImageUrl">رابط صورة التطبيق (شعار):</label>
+            <input type="text" id="appImageUrl" name="appImageUrl" placeholder="ضع رابط صورة الشعار هنا (مثال: https://.../logo.png)" required>
+            <!-- ستظهر رسائل الخطأ أسفل هذا الحقل -->
+
+            <label for="isFreeField">مجاني أم لا:</label>
+            <select id="isFreeField" name="isFreeField" required>
+                <option value="" disabled selected>اختر الحالة</option>
+                <option value="true">مجاني</option>
+                <option value="false">غير مجاني</option>
+            </select>
+            
+            <label for="usageField">مجال الاستخدام (قائمة محددة مسبقًا):</label>
+            <select id="usageField" name="usageField" required>
+                <option value="" disabled selected>اختر مجال الاستخدام</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Education">Education</option>
+                <option value="E-Commerce">E-Commerce</option>
+                <option value="Natural Language">Natural Language</option>
+                <option value="Generative Art">Generative Art</option>
+                <option value="Cloud Services">Cloud Services</option>
+                <option value="Other">أخرى (Other)</option>
+            </select>
+
+            <label for="appDescription">شرح مختصر عن التطبيق:</label>
+            <textarea id="appDescription" name="appDescription" rows="4" required></textarea>
+
+            <!-- ملاحظة: تركنا حقول إدخال الملفات الصوتية/الفيديو للطالب ليضيفها -->
+
+            <div class="form-actions">
+                <button type="submit">إرسال</button>
+                <button type="reset" id="resetButton">إعادة</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="footer">
+        حقوق النشر &copy; 2025 SVU - تطبيقات الذكاء الاصطناعي.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تطبيقات الذكاء الاصطناعي - التطبيقات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="apps.html">التطبيقات</a></li>
+            <li><a href="add_app.html">إضافة تطبيق</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h1>تطبيقات الذكاء الاصطناعي المختارة</h1>
+        
+        <p>يحتوي هذا الجدول على معلومات تفصيلية لأهم تطبيقات الذكاء الاصطناعي. يمكنك الضغط على "إظهار التفاصيل" لعرض المزيد.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>اسم التطبيق</th>
+                    <th>اسم الشركة المطورة</th>
+                    <th>مجال الاستخدام</th>
+                    <th>مجاني / غير مجاني</th>
+                    <th>اختيار (إظهار التفاصيل)</th>
+                </tr>
+            </thead>
+            <tbody id="appsTableBody">
+                <!-- 5 بنود أساسية ثابتة -->
+                
+                <!-- البند 1 -->
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>OpenAI</td>
+                    <td>Natural Language</td>
+                    <td>مجاني (مع اشتراك Plus)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> ChatGPT</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> OpenAI / معالجة اللغات الطبيعية</p>
+                            <p><strong>مجاني/غير مجاني:</strong> مجاني للاستخدام الأساسي</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://openai.com/" target="_blank">https://openai.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> نموذج لغة كبير قادر على إجراء محادثات شبيهة بالبشر وتقديم المساعدة في الكتابة والبرمجة والبحث.</p>
+                            <p><strong>الشعار وملفات الملتيميديا:</strong> 
+                                <img src="https://placehold.co/80x80/202123/ffffff?text=LOGO" alt="شعار ChatGPT" class="app-logo">
+                                <audio controls>
+                                    <!-- ضع رابط ملف صوتي هنا -->
+                                    <source src="placeholder.mp3" type="audio/mpeg">
+                                    المتصفح لا يدعم العنصر الصوتي.
+                                </audio>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- البند 2 -->
+                <tr>
+                    <td>Midjourney</td>
+                    <td>Midjourney, Inc.</td>
+                    <td>Generative Art</td>
+                    <td>غير مجاني</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> Midjourney</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Midjourney, Inc. / فنون توليدية</p>
+                            <p><strong>مجاني/غير مجاني:</strong> غير مجاني (عبر الاشتراكات)</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://www.midjourney.com/" target="_blank">https://www.midjourney.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> مولّد صور يعتمد على الذكاء الاصطناعي، يحول الأوصاف النصية إلى صور فنية مذهلة وعالية الجودة.</p>
+                            <p><strong>الشعار وملفات الملتيميديا:</strong> 
+                                <img src="https://placehold.co/80x80/000000/ffffff?text=LOGO" alt="شعار Midjourney" class="app-logo">
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- البند 3 -->
+                <tr>
+                    <td>Duolingo</td>
+                    <td>Duolingo</td>
+                    <td>Education</td>
+                    <td>مجاني (مع إعلانات)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> Duolingo</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Duolingo / التعليم (اكتساب اللغات)</p>
+                            <p><strong>مجاني/غير مجاني:</strong> مجاني للاستخدام الأساسي</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://www.duolingo.com/" target="_blank">https://www.duolingo.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> تطبيق لتعلم اللغات يستخدم خوارزميات التكيف لتخصيص الدروس وفقاً لتقدم المتعلم لضمان أقصى فعالية.</p>
+                            <p><strong>الشعار وملفات الملتيميديا:</strong> 
+                                <img src="https://placehold.co/80x80/58cc02/ffffff?text=LOGO" alt="شعار Duolingo" class="app-logo">
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- البند 4 -->
+                <tr>
+                    <td>AmazonSagemaker</td>
+                    <td>Amazon</td>
+                    <td>Cloud Services</td>
+                    <td>غير مجاني (حسب الاستخدام)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> Amazon SageMaker</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Amazon / خدمات السحابة والتعلم الآلي</p>
+                            <p><strong>مجاني/غير مجاني:</strong> غير مجاني</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://aws.amazon.com/sagemaker/" target="_blank">https://aws.amazon.com/sagemaker/</a></p>
+                            <p><strong>شرح مختصر:</strong> منصة سحابية كاملة تساعد المطورين على بناء وتدريب ونشر نماذج التعلم الآلي بسرعة وسهولة على نطاق واسع.</p>
+                            <p><strong>الشعار وملفات الملتيميديا:</strong> 
+                                <img src="https://placehold.co/80x80/ff9900/000000?text=LOGO" alt="شعار AWS" class="app-logo">
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- البند 5 -->
+                <tr>
+                    <td>Tesla FSD</td>
+                    <td>Tesla</td>
+                    <td>Robotics</td>
+                    <td>غير مجاني (خيار شراء)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> Tesla Full Self-Driving (FSD)</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Tesla / الروبوتات والقيادة الذاتية</p>
+                            <p><strong>مجاني/غير مجاني:</strong> غير مجاني</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://www.tesla.com/autopilot" target="_blank">https://www.tesla.com/autopilot</a></p>
+                            <p><strong>شرح مختصر:</strong> نظام متقدم لمساعدة السائق يستخدم رؤية حاسوبية وشبكات عصبونية متقدمة للقيادة شبه الذاتية على الطرق.</p>
+                            <p><strong>الشعار وملفات الملتيميديا:</strong> 
+                                <img src="https://placehold.co/80x80/cc0000/ffffff?text=LOGO" alt="شعار Tesla" class="app-logo">
+                                <video width="320" height="240" controls>
+                                    <!-- ضع رابط ملف فيديو هنا -->
+                                    <source src="placeholder.mp4" type="video/mp4">
+                                    المتصفح لا يدعم عنصر الفيديو.
+                                </video>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!-- سيتم إضافة التطبيقات الجديدة هنا ديناميكياً بواسطة myFunctions.js -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="footer">
+        حقوق النشر &copy; 2025 SVU - تطبيقات الذكاء الاصطناعي.
+    </div>
+
+</body>
+</html>
