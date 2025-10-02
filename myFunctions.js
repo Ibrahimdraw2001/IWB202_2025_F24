@@ -151,7 +151,7 @@ $(document).ready(function() {
                                 <p><strong>شعار التطبيق:</strong> 
                                     <img src="${app.imageUrl}" onerror="this.onerror=null; this.src='https://placehold.co/100x100/CCCCCC/000000?text=Logo';" alt="شعار ${app.name}" class="app-logo">
                                 </p>
-                                <p><strong>ملفات الملتيميديا:</strong> (غير متوفرة في الإضافة الديناميكية)</p>
+                                
                             </div>
                         </td>
                     </tr>
