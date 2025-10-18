@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تطبيقات الذكاء الاصطناعي - التطبيقات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="apps.html">التطبيقات</a></li>
+            <li><a href="add_app.html">إضافة تطبيق</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>تطبيقات الذكاء الاصطناعي المختارة</h1>
+        <p>يحتوي هذا الجدول على معلومات تفصيلية لأهم تطبيقات الذكاء الاصطناعي. يمكنك الضغط على "إظهار التفاصيل" لعرض المزيد.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>اسم التطبيق</th>
+                    <th>اسم الشركة المطورة</th>
+                    <th>مجال الاستخدام</th>
+                    <th>مجاني / غير مجاني</th>
+                    <th>اختيار (إظهار التفاصيل)</th>
+                </tr>
+            </thead>
+            <tbody id="appsTableBody">
+                <tr>
+                    <td>ChatGPT</td>
+                    <td>OpenAI</td>
+                    <td>Natural Language</td>
+                    <td>مجاني (مع اشتراك Plus)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> ChatGPT</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> OpenAI / معالجة اللغات الطبيعية</p>
+                            <p><strong>مجاني/غير مجاني:</strong> مجاني للاستخدام الأساسي</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://openai.com/" target="_blank">https://openai.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> نموذج لغة كبير قادر على إجراء محادثات شبيهة بالبشر وتقديم المساعدة في الكتابة والبرمجة والبحث.</p>
+                            <p><strong>الشعار وفيديو للشرح :</strong>
+                                </p>
+                                <img src="pic/ChatGPT.png" alt="شعار ChatGPT" class="app-logo"width="300" height="200">
+                                <video controls>
+                                    <source src="Video/ChatGPT.mp4" type="video/mp4">
+                                </video>
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Duolingo</td>
+                    <td>Duolingo</td>
+                    <td>Education</td>
+                    <td>مجاني (مع إعلانات)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> Duolingo</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Duolingo / التعليم (اكتساب اللغات)</p>
+                            <p><strong>مجاني/غير مجاني:</strong> مجاني للاستخدام الأساسي</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://www.duolingo.com/" target="_blank">https://www.duolingo.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> تطبيق لتعلم اللغات يستخدم خوارزميات التكيف لتخصيص الدروس وفقاً لتقدم المتعلم لضمان أقصى فعالية.</p>
+                            <p><strong>الشعار وفيديو للشرح :</strong> </p>
+                                <img src="Pic/Duolingo.png" alt="شعار Duolingo" class="app-logo" width="300" height="200"><br>
+                                   <video  controls width="720" height="600">
+                                    <source src="Video/Dulingo.mp4" type="video/mp4">
+                                </video>
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AmazonSagemaker</td>
+                    <td>Amazon</td>
+                    <td>Cloud Services</td>
+                    <td>غير مجاني (حسب الاستخدام)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> Amazon SageMaker</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Amazon / خدمات السحابة والتعلم الآلي</p>
+                            <p><strong>مجاني/غير مجاني:</strong> غير مجاني</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://aws.amazon.com/sagemaker/" target="_blank">https://aws.amazon.com/sagemaker/</a></p>
+                            <p><strong>شرح مختصر:</strong> منصة سحابية كاملة تساعد المطورين على بناء وتدريب ونشر نماذج التعلم الآلي بسرعة وسهولة على نطاق واسع.</p>
+                            <p><strong>الشعار وفيديو للشرح :</strong>
+                                <img src="Pic/AmazonSagemaker.png" alt="شعار AWS" class="app-logo"width="300" height="200">
+                               <video  controls width="720" height="600">
+                                    <source src="Video/Amazon SageMaker.mp4" type="video/mp4">
+                                </video>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                    <td>Gemini Google</td>
+                    <td>Google</td>
+                    <td>Education</td>
+                    <td> مجاني (حسب الاستخدام)</td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong>Gemini Google</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> Google / Education</p>
+                            <p><strong>مجاني/غير مجاني:</strong> مجاني</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://gemini.google.com/" target="_blank">https://gemini.google.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> مساعد ذكاء اصطناعي من جوجل يمكن استخدامه للكتابة، التخطيط، استلهام الأفكار، تلخيص المعلومات، وإنشاء الصور. يمكن الوصول إليه عبر موقع Gemini الإلكتروني أو تطبيق الهاتف المحمول، ويتم تشغيله بناءً على نماذج الذكاء الاصطناعي المتقدمة من جوجل. </p>
+                            <p><strong>الشعار وفيديو للشرح :</strong> </p>
+                                <img src="Pic/Google_Gemin.png" alt="شعار Gemini" class="app-logo"width="300" height="200">
+                               <video  controls width="720" height="600">
+                                    <source src="Video/Gemini_ Google.mp4" type="video/mp4">
+                                </video>
+                            
+                        </div>
+                    </td>
+                </tr>
+                    <td>DeepSeek</td>
+                    <td>DeepSeek</td>
+                    <td>Education and scientific research</td>
+                    <td> مجاني </td>
+                    <td><a href="#" class="toggle-details">إظهار التفاصيل</a></td>
+                </tr>
+                <tr class="details-row" style="display: none;">
+                    <td colspan="5">
+                        <div class="app-details">
+                            <p><strong>اسم التطبيق:</strong> DeepSeek</p>
+                            <p><strong>اسم الشركة المطورة/مجال الاستخدام:</strong> DeepSeek / التعليم والبحث العلمي</p>
+                            <p><strong>مجاني/غير مجاني:</strong>  مجاني</p>
+                            <p><strong>عنوان الموقع الإلكتروني:</strong> <a href="https://www.deepseek.com/" target="_blank">https://www.deepseek.com/</a></p>
+                            <p><strong>شرح مختصر:</strong> هي شركة ناشئة صينية تأسست في 2023 على يد ليانغ ونفنغ، رئيس صندوق التحوط الكمي الذي يعتمد على الذكاء الاصطناعي "هاي فلاير" (High-Flyer). وتطور الشركة نماذج ذكاء اصطناعي مفتوحة المصدر، وارتقى تطبيق الهاتف الذي يحمل الاسم نفسه ليتصدر قوائم التحميل على هاتف "أيفون" في الولايات المتحدة بعد إطلاقه أوائل يناير</p>
+                            <p><strong>الشعار وفيديو للشرح :</strong> </p>
+                                <img src="Pic/Deepseek.png" alt="شعار DeepSeek" class="app-logo"width="300" height="200">
+                               <video  controls width="720" height="600">
+                                    <source src="Video/DeepSeek AI.mp4" type="video/mp4">
+                                </video>
+                            
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
