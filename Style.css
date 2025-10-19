@@ -11,7 +11,7 @@ body {
 
 /* تنسيق شريط التنقل  */
 .navbar {
-    background-color: #22223b; 
+    background-color: #5a5ae9; 
     padding: 20px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
     position: sticky; 
@@ -55,7 +55,7 @@ body {
 
 h1, h2 {
     color: #4a4e69;
-    border-bottom: 3px solid #ffc300; 
+    border-bottom: 3px solid #719cd8; 
     padding-bottom: 15px;
     margin-bottom: 25px;
     font-weight: 700;
@@ -90,7 +90,7 @@ input[type="text"]:focus,
 input[type="url"]:focus, 
 textarea:focus,
 select:focus {
-    border-color: #ffc300;
+    border-color: #716cec;
     box-shadow: 0 0 10px rgba(255, 195, 0, 0.4);
     outline: none;
 }
@@ -129,7 +129,7 @@ th {
     background-color: #e8eaf6; 
     color: #22223b;
     font-weight: 700;
-    border-bottom: 3px solid #ffc300;
+    border-bottom: 3px solid #101ad4;
 }
 /* تنسيق رابط الإظهار/الإخفاء في الجدول */
 .toggle-details {
